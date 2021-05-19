@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 12 - The Music Player Application</title>
+    <script src="js/player.js"></script>
+    <style>
+        .center {
+          margin: auto;
+          width: 60%;
+          border: 3px solid #73AD21;
+          padding: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="center">
+    <h1>The Music Player</h1>
+    <!-- ADD DROP DOWN MENU -->
+    <label for="album">Select Album</label><br>
+        <select id="album" required>
+            <option value="album1">'Operation Ivy' 'Energy'</option>
+            <option value="album2">'Blink 182' 'Dude Ranch'"</option>
+            <option value="album3">'New Found Glory' 'Sticks and Stones'</option>        
+        </select><br><br>
+
+    <!-- ADD PLAY BUTTON -->
+    <input type="submit" class="btn btn-primary" name="play" id="play" value="Play"> 
+    <!-- ADD SHOW FAVORITE ALBUM BUTTON -->
+    <input type="submit" class="btn btn-primary" name="favAlbum" id="favAlbum" value="Favorite Album"> 
+    <br><br>
+    <p id="favoriteAlbum"></p>   
+    </div>  
+</body>
+</html>
